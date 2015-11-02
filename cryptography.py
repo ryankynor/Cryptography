@@ -13,6 +13,7 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
+
 if command == "e":
     print ("encrypt")
 
@@ -27,3 +28,7 @@ elif command == "q":
 
 else:
     print ("Did not understand command, try again.")
+    
+    
+    
+    
