@@ -12,3 +12,12 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
 input = ("Enter e to encrypt, d to decrypt, or q to quit: ")
+
+if input == "e":
+    #stuff
+
+if input == "d":
+    #stuff
+    
+if input == "q":
+    #stuff
