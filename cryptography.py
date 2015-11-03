@@ -23,7 +23,7 @@ elif command == "d":
 
   
 elif command == "q":
-    print ("quit")
+    print ("Goodybye!")
     
 
 else:
