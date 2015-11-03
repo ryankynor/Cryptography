@@ -14,13 +14,14 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 number = ("1","a"; "2","b")
-
+"""
 associations.find(char)
 associations[index]
-
+"""
 
 if command == "e":
     message = input("Message: ")
+    key = input("Key: ")
 
 
 elif command == "d":
