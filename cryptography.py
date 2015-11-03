@@ -20,7 +20,7 @@ associations[index]
 
 
 if command == "e":
-    print ("encrypt")
+    message = input("Message: ")
 
 
 elif command == "d":
