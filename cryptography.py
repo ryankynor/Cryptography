@@ -22,6 +22,8 @@ associations[index]
 if command == "e":
     message = input("Message: ")
     key = input("Key: ")
+    associations.find(key)
+    associations[key]
 
 
 elif command == "d":
