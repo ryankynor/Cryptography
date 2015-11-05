@@ -18,7 +18,7 @@ tuples = [('a',0),('b',1),('c',2),('d',3),('e',4),('f',5),('g',6),('h',7),('i',8
 associations.find(char)
 associations[index]
 """
-while command <> "q":
+while command != "q":
     for x in alphabet:
         if x == str(command)
 
