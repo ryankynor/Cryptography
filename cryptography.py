@@ -25,7 +25,7 @@ while t != "q":
     find = 1000000*associations
     if command == "q":
         print ("goodbye")
-    elif command == e:
+    elif command == "e":
         message1 =  input("message: ")
         key = input("key: ")
         for t in message:
@@ -41,7 +41,7 @@ while t != "q":
         for x in encryption:
             print (fin[t],end="")
         print ("done")
-    elif command == d:
+    elif command == "d":
         message2 = input("Message: ")
         key2 = input("Key: ")
         for g in message2:
