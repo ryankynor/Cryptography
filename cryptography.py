@@ -1,7 +1,7 @@
 """
 cryptography.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Ryan Kynor
+Credit: used Jasmines code to do find the length
 
 Assignment:
 
@@ -13,35 +13,20 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-key = []
 
-"""
-associations.find(char)
-associations[index]
-"""
-while command != "q":
-    for x in alphabet:
-        if x == str(command)
+l1 = []
+l2 = []
 
-"""
-if command == "e":
-    message = input("Message: ")
-    key = input("Key: ")
-    associations.find(key)
-    associations[key]
-
-
-elif command == "d":
-    print ("decrypt")
-
-  
-elif command == "q":
-    print ("Goodybye!")
-    
-
-else:
-    print ("Did not understand command, try again.")
-""
-    
-    
-    
+while t != "q":
+    find = 1000000*associations
+    if command == "q":
+        print ("goodbye")
+    elif command == e:
+        message1 =  input("message: ")
+        key = input("key: ")
+        for t in message:
+            l1.append(associations.find (x))
+        for t in key:
+            l2.append(associations.find (x))
+        if len(l1) > len(l2):
+            tvar = len(l1)/len(l2)
