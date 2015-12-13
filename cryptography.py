@@ -28,7 +28,7 @@ while t != "q":
     elif command == "e":
         message1 =  input("message: ")
         key = input("key: ")
-        for t in message:
+        for t in message1:
             l1.append(associations.find (x))
         for t in key:
             l2.append(associations.find (x))
