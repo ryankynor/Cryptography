@@ -19,6 +19,7 @@ l1 = []
 l2 = []
 L1 = []
 L2 = []
+t = ""
 
 while t != "q":
     find = 1000000*associations
