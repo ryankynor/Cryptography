@@ -17,6 +17,8 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 
 l1 = []
 l2 = []
+L1 = []
+L2 = []
 
 while t != "q":
     find = 1000000*associations
@@ -35,5 +37,25 @@ while t != "q":
             l1a = c*l1
             l2a = zip(l1a,l2)
             encryption = [t+x for t, x in l2a]
-        for x in encryption
+        for x in encryption:
+            print (fin[t],end"")
+        print ("done")
+    elif command == d:
+        message2 = input("Message: ")
+        key2 = input("Key: ")
+        for g in message2:
+            L1.append(association.find(g))
+        for g in key2:
+            L2.append(association.find(g))
+        if len(L1) > len(L2):
+            tvar2 = float (len(L1)/len(L2))
+            c = math.ceil(tvar2)
+            L2a = c*L1
+            L2a = zip(l1a, l2)
+            
+            
+            
+            
+            
+            
             
