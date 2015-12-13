@@ -38,7 +38,7 @@ while t != "q":
             l2a = zip(l1a,l2)
             encryption = [t+x for t, x in l2a]
         for x in encryption:
-            print (fin[t],end"")
+            print (fin[t],end="")
         print ("done")
     elif command == d:
         message2 = input("Message: ")
@@ -52,7 +52,7 @@ while t != "q":
             c = math.ceil(tvar2)
             L2a = c*L1
             L2a = zip(l1a, l2)
-            decryption = (t-x for t, x in L2a]
+            decryption = [t-x for t, x in L2a]
         else:
             may = (len(L2)/len(L1))
             f = math.ceil(may)
@@ -60,6 +60,8 @@ while t != "q":
             L4 = zip(L3, c)
             decryption = (z-x for z, x in L4)
         print ("done")
+    else:
+        print ("Did not understand command, please try again.")
             
             
             
