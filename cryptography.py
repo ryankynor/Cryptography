@@ -39,7 +39,7 @@ while command != "q":
             l2a = zip(l1,l2)
             encryption = [t+x for t, x in l2a]
         for x in encryption:
-            print (x,end="")
+            print (associations[x],end="")
         #print ("done")
     elif command == "d":
         L1 = []
@@ -62,6 +62,8 @@ while command != "q":
             L3 = l1a*may
             L4 = zip(L3, c)
             decryption = (z-x for z, x in L4)
+        for x in decryption:
+            print (associations[x],end="")
        # print ("done")
     else:
         print ("Did not understand command, please try again.")
