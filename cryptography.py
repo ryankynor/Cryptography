@@ -56,12 +56,6 @@ while command != "q":
             L2a = c*L1
             L2a = zip(l1a, l2)
             decryption = [t-x for t, x in L2a]
-        else:
-            may = (len(L2)/len(L1))
-            f = math.ceil(may)
-            L3 = l1a*may
-            L4 = zip(L3, c)
-            decryption = (z-x for z, x in L4)
         for x in decryption:
             print (associations[x],end="")
        # print ("done")
