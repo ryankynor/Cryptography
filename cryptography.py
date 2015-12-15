@@ -41,7 +41,7 @@ while command != "q":
             encryption = [t+x for t, x in l2a]
         for x in encryption:
             print (x,end="")
-        print ("done")
+        #print ("done")
     elif command == "d":
         message2 = input("Message: ")
         key2 = input("Key: ")
@@ -61,7 +61,7 @@ while command != "q":
             L3 = l1a*may
             L4 = zip(L3, c)
             decryption = (z-x for z, x in L4)
-        print ("done")
+       # print ("done")
     else:
         print ("Did not understand command, please try again.")
 else:
