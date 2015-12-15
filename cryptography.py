@@ -15,10 +15,7 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 command = 7
 #alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-l1 = []
-l2 = []
-L1 = []
-L2 = []
+
 t = ""
 
 while command != "q":
@@ -27,6 +24,8 @@ while command != "q":
     if command == "q":
         print ("goodbye")
     elif command == "e":
+        l1 = []
+        l2 = []
         message1 =  input("message: ")
         key = input("key: ")
         for t in message1:
@@ -43,6 +42,8 @@ while command != "q":
             print (x,end="")
         #print ("done")
     elif command == "d":
+        L1 = []
+        L2 = []
         message2 = input("Message: ")
         key2 = input("Key: ")
         for g in message2:
