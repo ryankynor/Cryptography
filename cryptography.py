@@ -54,7 +54,7 @@ while command != "q":
             tvar2 = float (len(L1)/len(L2))
             c = math.ceil(tvar2)
             L2a = c*L1
-            L2a = zip(l1a, l2)
+            L2a = zip(L1, L2a)
             decryption = [t-x for t, x in L2a]
         for x in decryption:
             print (associations[x],end="")
