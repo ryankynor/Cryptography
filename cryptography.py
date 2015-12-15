@@ -35,8 +35,8 @@ while command != "q":
         if len(l1) > len(l2):
             tvar = len(l1)/len(l2)
             c = math.ceil(tvar)
-            l1a = c*l1
-            l2a = zip(l1a,l2)
+            l2 = c*l2
+            l2a = zip(l1,l2)
             encryption = [t+x for t, x in l2a]
         for x in encryption:
             print (x,end="")
