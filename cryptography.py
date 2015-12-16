@@ -22,12 +22,12 @@ while command != "q":
     command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     find = 1000000*associations
     if command == "q":
-        print ("goodbye")
+        print ("Goodbye!")
     elif command == "e":
         l1 = []
         l2 = []
-        message1 =  input("message: ")
-        key = input("key: ")
+        message1 =  input("Message: ")
+        key = input("Key: ")
         for t in message1:
             l1.append(associations.find (t))
         for t in key:
@@ -40,7 +40,7 @@ while command != "q":
             encryption = [t+x for t, x in l2a]
         for x in encryption:
             print (associations[x],end="")
-        #print ("done")
+
     elif command == "d":
         L1 = []
         L2 = []
@@ -60,9 +60,7 @@ while command != "q":
             print (associations[x],end="")
        # print ("done")
     else:
-        print ("Did not understand command, please try again.")
-else:
-    print ("goodbye")
+        print ("Did not understand command, try again.")
             
             
             
