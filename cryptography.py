@@ -10,7 +10,7 @@ Write and submit a program that encrypts and decrypts user data.
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
 import math
-associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
+association = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
 command = 7
 #alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -20,7 +20,7 @@ t = ""
 
 while command != "q":
     command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-    find = 1000000*associations
+    associations = 100*association
     if command == "q":
         print ("Goodbye!")
     elif command == "e":
@@ -46,10 +46,10 @@ while command != "q":
         L2 = []
         message2 = input("Message: ")
         key2 = input("Key: ")
-        for g in message2:
-            L1.append(associations.find(g))
-        for g in key2:
-            L2.append(associations.find(g))
+        for t in message2:
+            L1.append(associations.find(t))
+        for t in key2:
+            L2.append(associations.find(t))
         if len(L1) > len(L2):
             tvar2 = float (len(L1)/len(L2))
             c = math.ceil(tvar2)
