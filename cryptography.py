@@ -58,7 +58,6 @@ while command != "q":
             decryption = [t-x for t, x in L2a]
         for x in decryption:
             print (associations[x],end="")
-       # print ("done")
     else:
         print ("Did not understand command, try again.")
             
