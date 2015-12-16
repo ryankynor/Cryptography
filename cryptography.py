@@ -21,7 +21,7 @@ t = ""
 while command != "q":
     command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     associations = 100*association
-    associations2 = association - 85
+    associations2 = [x - 85 for x in association]
     if command == "q":
         print ("Goodbye!")
     elif command == "e":
