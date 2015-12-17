@@ -65,8 +65,13 @@ while command != "q":
                 index.append(associations.find(s))
             L2a = zip(L1, index)
             decryption = [t-x for t, x in L2a]
+        qaz = 0
         for x in decryption:
-            print (associations[x],end="")
+            qaz += 1
+            if qaz == len(decryption):
+                print(associations[x])
+            else:
+                print(associations[x],end="")
     else:
         print ("Did not understand command, try again.")
             
