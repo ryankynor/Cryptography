@@ -49,8 +49,8 @@ while command != "q":
         key2 = input("Key: ")
         for t in message2:
             L1.append(associations.find(t))
-        for t in key2:
-            L2.append(associations.find(t))
+        for g in key2:
+            L2.append(associations.find(g))
         if len(L1) > len(L2):
             tvar2 = float (len(L1)/len(L2))
             c = math.ceil(tvar2)
