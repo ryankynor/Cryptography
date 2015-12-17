@@ -21,7 +21,7 @@ t = ""
 while command != "q":
     command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     associations = 100*association
-    associations2 = [x - 85 for x in association]
+    #associations2 = [x - 85 for x in association]
     if command == "q":
         print ("Goodbye!")
     elif command == "e":
@@ -48,9 +48,9 @@ while command != "q":
         message2 = input("Message: ")
         key2 = input("Key: ")
         for t in message2:
-            L1.append(associations2.find(t))
+            L1.append(associations.find(t))
         for t in key2:
-            L2.append(associations2.find(t))
+            L2.append(associations.find(t))
         if len(L1) > len(L2):
             tvar2 = float (len(L1)/len(L2))
             c = math.ceil(tvar2)
@@ -58,7 +58,7 @@ while command != "q":
             L2a = zip(L1, L2a)
             decryption = [t-x for t, x in L2a]
         for x in decryption:
-            print (associations2[x],end="")
+            print (associations[x],end="")
     else:
         print ("Did not understand command, try again.")
             
