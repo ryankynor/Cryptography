@@ -52,15 +52,20 @@ while command != "q":
         for g in key2:
             L2.append(associations.find(g))
         if len(L1) > len(L2):
-            d = len(L1) % len(L2)
-            e = math.floor(L1/L2)
+            d = len(L1) % len(L2) - 1
+            e = math.floor(len(L1)/len(L2))
             """
             tvar2 = float(len(L1)/len(L2))
             c = math.ceil(tvar2)
             L2a = c*L1
             """
-            L2a = L2*e + L2[d]
-            L2a = zip(L1, L2)
+            L2qa = key2*e + key2[d]
+            print(L2qa)
+            index = []
+            for s in L2qa:
+                index.append(associations.find(s))
+            L2a = zip(L1, index)
+            print(L2qa)
             decryption = [t-x for t, x in L2a]
         for x in decryption:
             print (associations[x],end="")
