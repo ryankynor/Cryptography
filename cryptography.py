@@ -59,6 +59,7 @@ while command != "q":
             c = math.ceil(tvar2)
             L2a = c*L1
             """
+            L2a = L2*e + L2[d]
             L2a = zip(L1, L2)
             decryption = [t-x for t, x in L2a]
         for x in decryption:
