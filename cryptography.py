@@ -60,12 +60,10 @@ while command != "q":
             L2a = c*L1
             """
             L2qa = key2*e + key2[d]
-            print(L2qa)
             index = []
             for s in L2qa:
                 index.append(associations.find(s))
             L2a = zip(L1, index)
-            print(L2qa)
             decryption = [t-x for t, x in L2a]
         for x in decryption:
             print (associations[x],end="")
