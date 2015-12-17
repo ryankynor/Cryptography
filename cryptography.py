@@ -52,6 +52,8 @@ while command != "q":
         for g in key2:
             L2.append(associations.find(g))
         if len(L1) > len(L2):
+            d = len(L1) % len(L2)
+            e = math.floor(L1/L2)
             """
             tvar2 = float(len(L1)/len(L2))
             c = math.ceil(tvar2)
