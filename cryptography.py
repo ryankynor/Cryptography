@@ -41,6 +41,7 @@ while command != "q":
             encryption = [t+x for t, x in l2a]
         for x in encryption:
             print (associations[x],end="")
+        print("")
 
     elif command == "d":
         L1 = []
@@ -52,18 +53,20 @@ while command != "q":
         for g in key2:
             L2.append(associations.find(g))
         if len(L1) > len(L2):
+            """
             d = len(L1) % len(L2) - 1
             e = math.floor(len(L1)/len(L2))
             """
             tvar2 = float(len(L1)/len(L2))
             c = math.ceil(tvar2)
-            L2a = c*L1
+            L2a = zip(L1, c*L2)
             """
             L2qa = key2*e + key2[d]
             index = []
             for s in L2qa:
                 index.append(associations.find(s))
             L2a = zip(L1, index)
+            """
             decryption = [t-x for t, x in L2a]
         qaz = 0
         for x in decryption:
